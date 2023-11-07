@@ -1,0 +1,22 @@
+{
+  "name": "playwright-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json",
+    "report": "node reporter.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^10.0.1",
+    "chai": "^4.3.10",
+    "cucumber-html-reporter": "^6.0.0",
+    "playwright": "^1.39.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  }
+}
